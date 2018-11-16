@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="KeepGoingCheck" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="KeepGointCheck"/>
+			<item value="yorn"/>
+			<item value="keepGoingCheck"/>
+			<item value="hooray"/>
+			<item value="uppercase"/>
+			<item value="lowercase"/>
+			<item value="yourGrade2"/>
+			<item value="double"/>
+			<item value="iwantthis"/>
+			<item value="ch"/>
+			<item value="syorn"/>
+			<item value="howmany"/>
+			<item value="input"/>
+			<item value="col"/>
+			<item value="column"/>
+		</list>
+		<list key="replacehistory">
+			<item value="KeepGoingCheck"/>
+			<item value="KeepGointCheck"/>
+			<item value="table"/>
+			<item value="upper case"/>
+			<item value="lower case"/>
+			<item value="scienceScore"/>
+			<item value="int"/>
+			<item value="rors"/>
+			<item value="input"/>
+			<item value="col"/>
+			<item value="hooray"/>
+			<item value="j1"/>
+			<item value="i1"/>
+			<item value="chose"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="284" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="690" key="DIALOG_X_ORIGIN"/>
+		<item value="149" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
