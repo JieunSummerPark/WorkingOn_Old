@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="tokenParallel" key="selection"/>
+		<item value="earned" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="earned"/>
+			<item value="leftToken"/>
 			<item value="tokenSlot"/>
 			<item value="earnedToken"/>
 			<item value="tokenCount"/>
@@ -21,8 +23,6 @@
 			<item value="keepGoingCheck"/>
 			<item value="uppercase"/>
 			<item value="lowercase"/>
-			<item value="yourGrade2"/>
-			<item value="double"/>
 		</list>
 		<list key="replacehistory">
 			<item value="tokenParallel"/>
