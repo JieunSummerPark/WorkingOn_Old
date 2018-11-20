@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class JP181115_CountToE {
+public class JP181015_CountToE {
 	public static void main(String[] args) {
 
 		// Create Scanner Object
