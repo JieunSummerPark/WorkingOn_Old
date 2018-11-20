@@ -1,0 +1,12 @@
+
+public class Plinco_01 {
+
+	public static void main(String[] args) {
+
+		System.out.println("Welcome to Plinco!");
+		System.out.print("Please eneter your name: ");
+		
+
+	}
+
+}

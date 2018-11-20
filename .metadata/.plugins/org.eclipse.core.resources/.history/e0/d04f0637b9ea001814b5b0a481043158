@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class plinko_02 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Welcome to Plinko game!");
+		System.out.print("Choose a number: ");
+
+		int userinput = input.nextInt();
+		System.out.println("You chose : " + userinput);
+
+		
+
+		input.close();
+
+	}
+
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Plinco_02 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String userName;
+		int tokenCount = 2;
+
+		System.out.println("Welcome to Plinco!"
+				+ "\nThis is a simulator for bonus points."
+				+ "\nYou will enter your name, then get tokens, play, and receive bonus points.");
+		
+		System.out.println("");
+		System.out.print("Please eneter your name: ");
+		userName = "Jieun Park";
+		// String userName = input.nextLine();
+		System.out.println("So, you are " + userName +".");
+		
+		// System.out.println(userName + "has " + tokenCount + " tokens.");
+		System.out.println(userName + " earned " + tokenCount + " tokens.");
+		
+		
+		
+		
+		
+
+		input.close();
+
+	}
+
+}
