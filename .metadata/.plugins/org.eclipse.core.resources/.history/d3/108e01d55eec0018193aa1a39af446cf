@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Plinko_10 {
+	
+	static String username;
+	static int earnedToken, leftToken;
+	private static int dropToken;
+	private static int[] topLine = {1,2,3,4,5,6,7,8,9};
+	
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Welcome to Plinco!");
+		System.out.print("Please enter your name: ");
+		username = input.nextLine();
+		System.out.println("You are " + username);
+		
+		earnedToken = leftToken = 1;
+		
+		printTopLine();
+		putXXX();
+		printTable();
+		printBottonLine();
+		
+		System.out.println("Where would you like to drop your Plinko Token?: ");
+		dropToken = input.nextInt();
+		System.out.println(username + " chose " + dropToken + ".");
+		
+		input.close();
+
+	}
+
+
+	private static void printTopLine() {
+		// TODO Auto-generated method stub
+		
+		System.out.print("\t");
+		for (int i=0; i<9; i++) {
+			System.out.print("("+topLine[i]+")" + "\t");
+		}
+		System.out.println("");
+		
+	}
+
+
+	private static void putXXX() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private static void printTable() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private static void printBottonLine() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

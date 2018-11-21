@@ -17,7 +17,6 @@ public class P536_Listing_14_3 extends Application {
 
 	
 	public static void main(String[] args) {
-
 		
 	}
 

@@ -1,0 +1,11 @@
+
+public class P536_Listing_14_3 {
+
+	public static void main(String[] args) {
+
+		import javafx.application.Application;
+		
+
+	}
+
+}

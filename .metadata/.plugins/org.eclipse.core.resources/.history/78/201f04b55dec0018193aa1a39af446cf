@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Plinko_10 {
+	
+	static String username;
+	static int earnedToken, leftToken;
+	static static int dropToken;
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Welcome to Plinco!");
+		System.out.print("Please enter your name: ");
+		username = input.nextLine();
+		System.out.println("You are " + username);
+		
+		earnedToken = leftToken = 1;
+		
+		System.out.println("Where would you like to drop your Plinko Token?: ");
+		dropToken = input.nextInt();
+		System.out.println(username + " chose " + dropToken + ".");
+		
+		input.close();
+
+	}
+
+}
