@@ -11,7 +11,7 @@
          <children>
             <Button mnemonicParsing="false" text="확인" />
             <Button mnemonicParsing="false" text="취소" />
-            <Button mnemonicParsing="false" text="종료" />
+            <Button fx:id="btnExit" mnemonicParsing="false" text="종료" />
          </children>
       </HBox>
    </children>
