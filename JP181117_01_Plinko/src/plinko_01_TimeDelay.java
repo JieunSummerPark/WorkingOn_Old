@@ -17,7 +17,7 @@ public class plinko_01_TimeDelay {
 
 		try {
 			for(int i=0; i<4; i++) {
-				TimeUnit.SECONDS.sleep(1);
+				TimeUnit.SECONDS.sleep(1/2);
 			}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Plinko_13_MoveOnlyLeftRight_NotDown {
+public class Plinko_13 {
 	
 	static String username;
 	static int earnedToken, leftToken;
@@ -56,13 +56,12 @@ public class Plinko_13_MoveOnlyLeftRight_NotDown {
 		
 		putXXX();
 		
-		System.out.println("\nPLINKO");
+		System.out.println("\n\n\nPLINKO");
 		printTopLine();
 		printTable();
 		printPrizeLine();
 		
-		System.out.println("This is PLINKO board. Can you see the prize points?"
-				+ "\nChoose the slot.");
+		System.out.println("\nThis is PLINKO board for game. Choose a slot for points.");
 		
 		for (int gameCount = 1; gameCount <= earnedToken; gameCount++) {
 			
@@ -75,7 +74,7 @@ public class Plinko_13_MoveOnlyLeftRight_NotDown {
 			putXXX();
 			putOOO();
 			
-			System.out.println("\nPLINKO");
+			System.out.println("\nPLINKO - ROUND" + gameCount);
 			printTopLine();
 			printTable();
 			printPrizeLine();
