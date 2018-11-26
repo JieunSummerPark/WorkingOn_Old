@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-public class Plinko_14_TimeDelay {
+public class Plinko_15_OnlyLeftAndRight {
 
 	static String username;
 	static int earnedToken, leftToken;
@@ -105,11 +105,19 @@ public class Plinko_14_TimeDelay {
 		for (tokenSerial=0; tokenSerial<plinkoBoard.length; tokenSerial++) {
 
 			if (tokenParallel>0 && tokenParallel<8) {
-				ranNum = (int)(Math.random() * 3 - 1);
+
+				int merong = (int)(Math.random() * 2);
+
+				if (merong == 0) {
+					ranNum = 1;
+				} else if (merong == 1) {
+					ranNum = -1;
+				}
+
 			} else if (tokenParallel==0) {
-				ranNum = (int)(Math.random() * 2);
+				ranNum = 1;
 			} if (tokenParallel==8) {
-				ranNum = (int)(Math.random() * -2);
+				ranNum = -1;
 			}
 
 			tokenParallel += ranNum;
@@ -117,18 +125,6 @@ public class Plinko_14_TimeDelay {
 		}
 
 	}
-
-
-	private static void printTopLine() {
-
-		System.out.print("\t");
-		for (int i=0; i<9; i++) {
-			System.out.print("("+topLine[i]+")" + "\t");
-		}
-		System.out.println("");
-
-	}
-
 
 	private static void putXXX() {
 
@@ -140,6 +136,15 @@ public class Plinko_14_TimeDelay {
 
 	}
 
+	private static void printTopLine() {
+
+		System.out.print("\t");
+		for (int i=0; i<9; i++) {
+			System.out.print("("+topLine[i]+")" + "\t");
+		}
+		System.out.println("");
+
+	}
 
 	private static void printTable_WithoutDelay() {
 
@@ -152,7 +157,7 @@ public class Plinko_14_TimeDelay {
 		}
 
 	}
-	
+
 	private static void printTable_WithDelay() {
 
 		for (int i=0; i<plinkoBoard.length; i++) {
@@ -170,10 +175,10 @@ public class Plinko_14_TimeDelay {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
+
 
 		}
-		
+
 	}
 
 	private static void printTokenLine() {
