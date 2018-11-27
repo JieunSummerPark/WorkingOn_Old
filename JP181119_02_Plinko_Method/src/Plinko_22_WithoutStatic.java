@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-public class Plinko_21 {
+public class Plinko_22_WithoutStatic {
 
 	static String userName;
 	static int earnedToken;
@@ -128,10 +128,9 @@ public class Plinko_21 {
 				+ "\n-----------------------------------------------------------------------------\n\n\n");
 	}
 
+	// Put " O " on track of table to simulate token drops.
 	public static void putOOO() {
-
 		plinkoBoard[0][boardParallel] = " O ";
-
 		for (boardSerial=1; boardSerial<plinkoBoard.length; boardSerial++) {
 			if (boardParallel>0 && boardParallel<8) {
 				int plusORminus = (int)(Math.random() * 2);
@@ -147,9 +146,9 @@ public class Plinko_21 {
 			boardParallel += ranNum;
 			plinkoBoard[boardSerial][boardParallel] = " O ";
 		}
-
 	}
 
+	// Put "XXX" on every table to reset table.
 	public static void putXXX() {
 
 		for (int i=0; i<plinkoBoard.length; i++) {
@@ -163,20 +162,19 @@ public class Plinko_21 {
 	public static void printTopLine() {
 
 		System.out.print("\t");
-		for (int i=0; i<9; i++) {
+		for (int i=0; i<9; i++)
 			System.out.print("("+topLine[i]+")" + "\t");
-		}
 		System.out.println("");
 
 	}
 
+	// Print the table which has putted by " O " or "XXX".
 	public static void printTable_WithoutDelay() {
 
 		for (int i=0; i<plinkoBoard.length; i++) {
 			System.out.print("\t");
-			for (int j=0; j<plinkoBoard[i].length; j++) {
+			for (int j=0; j<plinkoBoard[i].length; j++)
 				System.out.print(plinkoBoard[i][j] + "\t");				
-			}
 			System.out.println("");
 		}
 
@@ -186,11 +184,10 @@ public class Plinko_21 {
 
 		for (int i=0; i<plinkoBoard.length; i++) {
 			System.out.print("\t");
-			for (int j=0; j<plinkoBoard[i].length; j++) {
+			for (int j=0; j<plinkoBoard[i].length; j++)
 				System.out.print(plinkoBoard[i][j] + "\t");				
-			}
 			System.out.println("");
-
+			
 			// This is Time delay code. It makes delays between each lines.
 			try {
 				for(int k=0; k<1; k++) {
