@@ -10,8 +10,8 @@ public class Plinko_22_WithoutStatic {
 	static int slot;
 	static int boardSerial;
 	static int boardParallel;
-	static int ranNum;
-	static int tokenPoints;
+	static int leftORright;
+	static int gamePoints;
 	static int totalPoints;
 
 	static int[] topLine = {1,2,3,4,5,6,7,8,9};
@@ -19,14 +19,15 @@ public class Plinko_22_WithoutStatic {
 	static int[] tokenLine = {1,2,3,4,5,4,3,2,1};
 	static int[] prizeLine = {100,200,300,400,500,400,300,200,100};
 
-	static int Delay = 500;	// Time delays 500 milliseconds on each token falls.
+	static int Delay = 500;	// Time delays 500 milliseconds when each token falls.
 
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
 
 		// Introduce and get user's name
-		System.out.println("This simulation aims to replicate the feeling of playing Plinko."
+		System.out.println(""
+				+ "This simulation aims to replicate the feeling of playing Plinko."
 				+ "\nYou will earn points based solely on chance. How fun!");
 		System.out.print("Please enter your name: ");
 		userName = input.nextLine();
@@ -62,7 +63,7 @@ public class Plinko_22_WithoutStatic {
 
 		printGameStart();
 
-		earnedToken = tokenLine[boardParallel];		// Save a number from array to earnedToken.
+		earnedToken = tokenLine[boardParallel];		// Store a number from array to earnedToken.
 		leftToken = earnedToken;					// At first, the number of left tokens is same as earned tokens. 
 
 
@@ -94,11 +95,11 @@ public class Plinko_22_WithoutStatic {
 			printPrizeLine();
 
 			--leftToken;
-			tokenPoints = prizeLine[boardParallel];
-			totalPoints += tokenPoints;
+			gamePoints = prizeLine[boardParallel];
+			totalPoints += gamePoints;
 			System.out.println(""
 					+ "\nThat token landed in slot (" + (boardParallel+1) + ")."
-					+ "\nThat token gained " + tokenPoints + " points."
+					+ "\nThat token gained " + gamePoints + " points."
 					+ "\nYou have " + leftToken + " tokens left.");
 		}
 
@@ -133,63 +134,56 @@ public class Plinko_22_WithoutStatic {
 		plinkoBoard[0][boardParallel] = " O ";
 		for (boardSerial=1; boardSerial<plinkoBoard.length; boardSerial++) {
 			if (boardParallel>0 && boardParallel<8) {
-				int plusORminus = (int)(Math.random() * 2);
-				if (plusORminus == 0)
-					ranNum = 1;
-				else if (plusORminus == 1)
-					ranNum = -1;
+				int ranNum = (int)(Math.random() * 2);
+				if (ranNum == 0)
+					leftORright = 1;
+				else if (ranNum == 1)
+					leftORright = -1;
 			} else if (boardParallel==0) {
-				ranNum = 1;
+				leftORright = 1;
 			} else if (boardParallel==8) {
-				ranNum = -1;
+				leftORright = -1;
 			}
-			boardParallel += ranNum;
+			boardParallel += leftORright;
 			plinkoBoard[boardSerial][boardParallel] = " O ";
 		}
 	}
 
 	// Put "XXX" on every table to reset table.
 	public static void putXXX() {
-
 		for (int i=0; i<plinkoBoard.length; i++) {
 			for (int j=0; j<plinkoBoard[i].length; j++) {
 				plinkoBoard[i][j] = "XXX";
 			}
 		}
-
 	}
 
 	public static void printTopLine() {
-
 		System.out.print("\t");
 		for (int i=0; i<9; i++)
 			System.out.print("("+topLine[i]+")" + "\t");
 		System.out.println("");
-
 	}
 
 	// Print the table which has putted by " O " or "XXX".
 	public static void printTable_WithoutDelay() {
-
 		for (int i=0; i<plinkoBoard.length; i++) {
 			System.out.print("\t");
 			for (int j=0; j<plinkoBoard[i].length; j++)
 				System.out.print(plinkoBoard[i][j] + "\t");				
 			System.out.println("");
 		}
-
 	}
 
+	// Print the table which has putted by " O " or "XXX".
+	// With time delay
 	public static void printTable_WithDelay() {
-
 		for (int i=0; i<plinkoBoard.length; i++) {
 			System.out.print("\t");
 			for (int j=0; j<plinkoBoard[i].length; j++)
 				System.out.print(plinkoBoard[i][j] + "\t");				
 			System.out.println("");
-			
-			// This is Time delay code. It makes delays between each lines.
-			try {
+			try {	// This is Time delay code. It makes delays between each line.
 				for(int k=0; k<1; k++) {
 					TimeUnit.MILLISECONDS.sleep(Delay);
 				}
@@ -197,25 +191,20 @@ public class Plinko_22_WithoutStatic {
 				e.printStackTrace();
 			}
 		}
-
 	}
 
 	public static void printTokenLine() {
-
 		System.out.print("\t");
 		for (int i=0; i<9; i++)
 			System.out.print(" " + tokenLine[i] + "\t");
 		System.out.println("");
-
 	}
 
 	public static void printPrizeLine() {
-
 		System.out.print("\t");
 		for (int i=0; i<9; i++)
 			System.out.print(prizeLine[i] + "\t");
 		System.out.println("");
-
 	}
 
 }
