@@ -6,51 +6,51 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="printTable_" key="selection"/>
+		<item value="boardParallel" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="tokenParallel"/>
+			<item value="tokenSerial"/>
+			<item value="prizeArray"/>
+			<item value="tokenArray"/>
+			<item value="timeToWait"/>
+			<item value="serial"/>
+			<item value="pointCount"/>
+			<item value="username"/>
+			<item value="earnedToken"/>
+			<item value="dropToken"/>
 			<item value="printTable"/>
 			<item value="printTableWithDelay"/>
 			<item value="earned"/>
 			<item value="leftToken"/>
 			<item value="tokenSlot"/>
-			<item value="earnedToken"/>
-			<item value="tokenCount"/>
-			<item value="userName"/>
-			<item value="tokenIndex"/>
-			<item value="plinkoboard"/>
-			<item value="hooray"/>
-			<item value="left"/>
-			<item value="KeepGointCheck"/>
-			<item value="yorn"/>
-			<item value="keepGoingCheck"/>
 		</list>
 		<list key="replacehistory">
+			<item value="boardParallel"/>
+			<item value="boardSerial"/>
+			<item value="prizeLine"/>
+			<item value="tokenLine"/>
+			<item value="Delay"/>
+			<item value="totalPoints"/>
+			<item value="userName"/>
+			<item value="slot"/>
+			<item value="tokenEarned"/>
 			<item value="printTable_"/>
 			<item value="printTable_WithDelay"/>
 			<item value="printTableWithDelay"/>
 			<item value="tokenParallel"/>
 			<item value="earnedToken"/>
 			<item value="username"/>
-			<item value="plincoBoard"/>
-			<item value="plinkoBoard"/>
-			<item value="KeepGoingCheck"/>
-			<item value="KeepGointCheck"/>
-			<item value="table"/>
-			<item value="upper case"/>
-			<item value="lower case"/>
-			<item value="scienceScore"/>
-			<item value="int"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="1174" key="DIALOG_X_ORIGIN"/>
-		<item value="196" key="DIALOG_Y_ORIGIN"/>
+		<item value="409" key="DIALOG_HEIGHT"/>
+		<item value="1459" key="DIALOG_X_ORIGIN"/>
+		<item value="251" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
