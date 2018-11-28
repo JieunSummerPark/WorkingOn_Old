@@ -175,7 +175,7 @@ public class Plinko_22_WithoutStatic {
 		}
 	}
 
-	// Print the table which has putted by " O " or "XXX".
+	// Print the table which has put by " O " or "XXX".
 	// With time delay
 	public static void printTable_WithDelay() {
 		for (int i=0; i<plinkoBoard.length; i++) {
