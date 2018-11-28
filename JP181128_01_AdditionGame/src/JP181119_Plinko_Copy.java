@@ -3,23 +3,23 @@ import java.util.concurrent.TimeUnit;
 
 public class JP181119_Plinko_Copy {
 
-	static String userName;
-	static int earnedToken;
-	static int leftToken;
+	public static String userName;
+	public static int earnedToken;
+	public static int leftToken;
 
-	static int slot;
-	static int boardSerial;
-	static int boardParallel;
-	static int leftORright;
-	static int gamePoints;
-	static int totalPoints;
+	public static int slot;
+	public static int boardSerial;
+	public static int boardParallel;
+	public static int leftORright;
+	public static int gamePoints;
+	public static int totalPoints;
 
-	static int[] topLine = {1,2,3,4,5,6,7,8,9};
-	static String[][] plinkoBoard = new String[11][9];
-	static int[] tokenLine = {1,2,3,4,5,4,3,2,1};
-	static int[] prizeLine = {100,200,300,400,500,400,300,200,100};
+	public static int[] topLine = {1,2,3,4,5,6,7,8,9};
+	public static String[][] plinkoBoard = new String[11][9];
+	public static int[] tokenLine = {1,2,3,4,5,4,3,2,1};
+	public static int[] prizeLine = {100,200,300,400,500,400,300,200,100};
 
-	static int Delay = 500;	// Time delays 500 milliseconds when each token falls.
+	public static int Delay = 500;	// Time delays 500 milliseconds when each token falls.
 
 	public static void main(String[] args) {
 
