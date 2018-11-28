@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-public class Plinko_22_WithoutStatic {
+public class JP181119_Plinko_Copy {
 
 	static String userName;
 	static int earnedToken;
