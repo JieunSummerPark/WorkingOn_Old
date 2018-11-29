@@ -19,13 +19,13 @@ public class DBN_01_WithoutSB extends Application {
 		root.setSpacing(40);
 		
 		Label label = new Label("Two Methodology");
-		label.setFont(new Font("Calibri",40));
+//		label.setFont(new Font("Calibri",40));
 		
 		Button btn = new Button("Close");
 		btn.setPrefWidth(80);
 		btn.setOnAction(event->Platform.exit());
 		
-		root.getChildren().add(label);
+//		root.getChildren().add(label);
 		root.getChildren().add(btn);
 		
 		Scene scene = new Scene(root);
