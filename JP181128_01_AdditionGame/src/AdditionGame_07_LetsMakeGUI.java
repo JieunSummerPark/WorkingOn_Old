@@ -6,30 +6,28 @@ public class AdditionGame_07_LetsMakeGUI {
 
 	public static String userName;
 
-	public static int roundCounter;
-	public static int howManyGames = 7;
-
+	public static int whichCalculation;
+	
 	public static int ranNum1;
 	public static int ranNum2;
 	public static int result;
 	public static int answer;
 
+	public static int roundCounter;
+	public static int howManyGames = 7;
 	public static int correctCounter = 0;
 
 	public static double scorePercentage;
-	public static long temp = 3L;
 
 	public static double startTime;
 	public static double stopTime;
 	public static double answerTime;
 	public static double totalTime = 0;
 
-	public static char startORstop;
-
 	public static char keepGoingCheck;
 	public static boolean keepGoing = true;
 
-	public static int whichCalculation;
+
 
 
 	public static void main(String[] args) {
