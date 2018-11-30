@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AdditionGame_09_METHODS {
+public class AdditionGame_09_METHODS_01 {
 
 	public static Scanner input = new Scanner(System.in);
 
