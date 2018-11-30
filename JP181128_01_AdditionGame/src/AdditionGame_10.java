@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AdditionGame_09_METHODS {
+public class AdditionGame_10 {
 
 	public static Scanner input = new Scanner(System.in);
 
@@ -30,6 +30,8 @@ public class AdditionGame_09_METHODS {
 	public static int heartCount = 3;
 	public static int wrongCount;
 
+	public static boolean gameOver;
+
 
 
 	public static void main(String[] args) {
@@ -43,6 +45,8 @@ public class AdditionGame_09_METHODS {
 		accounceTheRule();
 
 		while(keepGoing) {
+
+			gameOver = false;
 
 			askToChooseCalculation();
 			whichCalculation = input.nextInt();
@@ -69,25 +73,34 @@ public class AdditionGame_09_METHODS {
 				totalTime += answeringTime;
 				if (heartCount<=0) {
 					announceGameOver();
+					gameOver = true;
 					break;
 				}
 			}
 
 			announceResult();
-			announceHeartGAINorLOSE();
+			accountHEARTGAINorCHEERUP();
+
+			if (heartCount>30) {
+				System.out.println("YOU WON!");
+				break;
+			}
 
 			// RESET
 			correctCounter = 0;
 			totalTime = 0;
 
-			System.out.println(""
+			System.out.print(""
 					+ "\nWould you like to try again?"
-					+ "Press any key to try again OR Press '0' to stop: ");
+					+ "\nPress any key to try again OR Press '0' to stop : ");
 			keepGoingCheck = input.next().charAt(0);
 			if(keepGoingCheck == '0') {
 				System.out.println("\n\nThank you and good bye.");
 				keepGoing = false;
 				break;
+			} else if (gameOver == true) {
+				heartCount=3;
+				System.out.println("\n\n\n" + userName + "'s heart has reset.");
 			}
 		} // End of While Loop
 
@@ -111,15 +124,18 @@ public class AdditionGame_09_METHODS {
 				+ "\nYou will get or lose your hearts depends on your result."
 				+ "\n(result = time and the number of wrong)."
 				+ "\nWhen you lose all of your heart, you will lose."
-				+ "\nwhen you get 30 heart or more than that,"
-				+ "\n\n<< YOU WILL WIN THIS GAME >>");
+				+ "\nwhen you get 30 heart or more than that, YOU WILL WIN THIS GAME.");
 	}
-	
-	
-	
-	
+
+
+
+
 	private static void askToChooseCalculation() {
-		System.out.print("\n"
+
+		if(gameOver == true)
+			System.out.println("");
+
+		System.out.print(""
 				+ "\nWhich calculation do you want to do?"
 				+ "\n1. Addition"
 				+ "\n2. Subtraction"
@@ -128,10 +144,10 @@ public class AdditionGame_09_METHODS {
 				+ "\n\nPlease choose : ");
 
 	}
-	
-	
-	
-	
+
+
+
+
 	private static void announceTheGameStart() {
 		switch(whichCalculation) {
 		case 1: System.out.println("\n\n"
@@ -156,10 +172,10 @@ public class AdditionGame_09_METHODS {
 		break;
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	private static void computing() {
 
 		// TODO 나중에 나눗셈이랑 빼기는 ranNum1 더 큰걸로 정해주기
@@ -185,20 +201,20 @@ public class AdditionGame_09_METHODS {
 		System.out.println("");
 
 	}
-	
-	
-	
-	
+
+
+
+
 	private static void announceGameOver() {
 		System.out.println("\n\n"
 				+ "\n---------------------------------------------------------"
 				+ "\n-------------------------GameOver------------------------"
 				+ "\n---------------------------------------------------------\n\n\n");
 	}
-	
-	
-	
-	
+
+
+
+
 	private static void announceResult() {
 		scorePercentage = (correctCounter/(double)howManyGames) * 100;
 		System.out.println(userName + "'s score is " + correctCounter + " out of " + howManyGames + ".");
@@ -206,37 +222,38 @@ public class AdditionGame_09_METHODS {
 		System.out.println(userName + " took " + String.format("%.2f", totalTime) + " seconds.");
 		System.out.println(userName + "'s average seconds per answer is " + String.format("%.2f", totalTime/howManyGames) + " seconds.");
 	}
-	
-	
-	
-	
-	private static void announceHeartGAINorLOSE() {
+
+
+	private static void accountHEARTGAINorCHEERUP() {
 		System.out.println("");
+
 		if (wrongCount < 3) {
+
+			// SCORE PERCENTAGE
 			if (scorePercentage > 90) {
 				heartCount += 3;
 				System.out.println("Your score is above 90%! You get 3 more hearts.");
 			}
 
+			// TIME CONSUME
 			if ((totalTime/howManyGames) < 1) {
 				heartCount += 5;
-				System.out.println("You are so fast! You get 5 more hearts.");
+				System.out.println("You are SOOO fast! You get 5 more hearts.");
 			} else if ((totalTime/howManyGames) < 2) {
 				heartCount += 1;
 				System.out.println("You are pretty fast! You get 1 more hearts.");
 			}
 
 			System.out.println("\nNow you have " + heartCount + " hearts.");
-		} else if (wrongCount >5) {
-			if (heartCount>0) {
+		}
+
+		// WHEN USER WRONG MANY TIME
+		else if (wrongCount >5) {
+			if (heartCount > 0) {
 				System.out.println("Don't give up! You can do it!");
 			} else {
 				System.out.println("Better luck next time...!");
 			}
-		}
-
-		if (heartCount>30) {
-			System.out.println("");
 		}
 	}
 
@@ -252,10 +269,11 @@ public class AdditionGame_09_METHODS {
 
 
 
-	
-	
-	
-	
+
+
+
+
+
 	private static void Addition() {
 		result = ranNum1 + ranNum2;
 		System.out.print(roundCounter + ". " + ranNum1 + " + " + ranNum2 + " = ");
