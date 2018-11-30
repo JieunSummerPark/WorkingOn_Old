@@ -10,8 +10,7 @@
 
 import javax.swing.*;
 
-
-public class JavaSwing_01 {
+public class JavaSwing01 {
 
 	public static void main(String[] args) {
 

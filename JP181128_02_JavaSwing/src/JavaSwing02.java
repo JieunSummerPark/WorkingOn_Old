@@ -9,10 +9,10 @@
 
 import javax.swing.*;
 
-public class JavaSwing_02 extends JFrame {
+public class JavaSwing02 extends JFrame {
 	
 	JFrame fungi;
-	JavaSwing_02(){
+	JavaSwing02(){
 		JButton boston = new JButton("Click");
 		boston.setBounds(130, 100, 100, 40);
 		
@@ -23,7 +23,7 @@ public class JavaSwing_02 extends JFrame {
 
 	public static void main(String[] args) {
 
-		new JavaSwing_02();
+		new JavaSwing02();
 
 	}
 
