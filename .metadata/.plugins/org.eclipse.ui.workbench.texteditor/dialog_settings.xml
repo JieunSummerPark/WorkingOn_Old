@@ -6,29 +6,35 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="input" key="selection"/>
+		<item value="heart" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="life"/>
+			<item value="label"/>
+			<item value="totalTime"/>
+			<item value="Division"/>
+			<item value="Multiplication"/>
+			<item value="Subtraction"/>
+			<item value="addition"/>
+			<item value="time"/>
+			<item value="TotalTime"/>
+			<item value="average"/>
+			<item value="static"/>
+			<item value="average seconds"/>
 			<item value="input"/>
 			<item value="math"/>
 			<item value="save"/>
-			<item value="delay"/>
-			<item value="tokenPoints"/>
-			<item value="PORM"/>
-			<item value="PROM"/>
-			<item value="plusorminus"/>
-			<item value="ranNum"/>
-			<item value="ran"/>
-			<item value="parallel"/>
-			<item value="boardSerial"/>
-			<item value="slot"/>
-			<item value="ball"/>
-			<item value="tokenParallel"/>
 		</list>
 		<list key="replacehistory">
+			<item value="heart"/>
+			<item value="Division"/>
+			<item value="Multiplication"/>
+			<item value="Subtraction"/>
+			<item value="Addition"/>
+			<item value="public static"/>
 			<item value="store"/>
 			<item value="gamePoints"/>
 			<item value="leftORright"/>
@@ -38,12 +44,6 @@
 			<item value="boardSerial"/>
 			<item value="prizeLine"/>
 			<item value="tokenLine"/>
-			<item value="Delay"/>
-			<item value="totalPoints"/>
-			<item value="userName"/>
-			<item value="slot"/>
-			<item value="tokenEarned"/>
-			<item value="printTable_"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
