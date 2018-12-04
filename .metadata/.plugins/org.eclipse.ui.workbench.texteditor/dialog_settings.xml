@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="heart" key="selection"/>
+		<item value="tfUserName" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="tfAnnualInterestRate"/>
 			<item value="life"/>
 			<item value="label"/>
 			<item value="totalTime"/>
@@ -26,9 +27,9 @@
 			<item value="average seconds"/>
 			<item value="input"/>
 			<item value="math"/>
-			<item value="save"/>
 		</list>
 		<list key="replacehistory">
+			<item value="tfUserName"/>
 			<item value="heart"/>
 			<item value="Division"/>
 			<item value="Multiplication"/>
@@ -43,7 +44,6 @@
 			<item value="boardParallel"/>
 			<item value="boardSerial"/>
 			<item value="prizeLine"/>
-			<item value="tokenLine"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

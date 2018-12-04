@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/JP181015_01_ProgrammingPracticum/src/HW07_CountToE_02.java"/>
+<listEntry value="/JP181015_01_CountToE/src/HW07_CountToE_02.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="HW07_CountToE_02"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="JP181015_01_ProgrammingPracticum"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="JP181015_01_CountToE"/>
 </launchConfiguration>

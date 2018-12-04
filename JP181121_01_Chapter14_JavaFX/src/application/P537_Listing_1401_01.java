@@ -10,7 +10,8 @@ public class P537_Listing_1401_01 extends Application {
 	@Override	// Override the start method in the Application class
 	public void start(Stage primaryStage) {
 		// Create a scene and place a button in the scene
-		Button btOK = new Button("OK");
+		Button btOK = new Button("what is " + additionGame.number1 +
+				" + " + additionGame.number2 + "?");
 		Scene scene = new Scene(btOK, 200, 200);
 		primaryStage.setTitle("Listing_14.1");	// Set the stage title
 		primaryStage.setScene(scene);	// Place the scene in the stage
